@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GumballMachineFancy
+comment0.text=\n\ This\ is\ a\ specific\ implementation\ of\ GumballMachine\ abstract\ class\ that\ costs\ 50\ cents\ per\ gumball\ and\ \n\ accepts\ only\ 2\ quarters.\n\n\ Vishwanath\ Manvi\n\ 1.0\ -\ 9/4/18\n
+comment1.params=numberGumballs
+comment1.target=GumballMachineFancy(int)
+comment2.params=coin
+comment2.target=State\ getHasQuarterState(int)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
