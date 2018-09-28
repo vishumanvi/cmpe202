@@ -1,0 +1,86 @@
+v2.0:
+
+Table:
+Maintain list of observers
+Attach observers
+Detach observers
+
+Table state
+
+Interface State
+{
+customerEating();
+customerFinishedFood();
+customerCheckedin();
+}
+
+Occupied:
+customerEating();
+customerPaidCheque();
+	Change state to Available
+
+Available:
+customerCheckedin();
+	Change state to Occupied
+	
+Restaurant:
+
+ConciergeStaff: (Observer)
+- update()
+	- Get Next eligible customer for the table available
+	- inform messenger to notify identified customer
+- adds a new customer to waitlist
+- cancel waitlist if customer didn't confirm
+- checkin customer
+
+Waiter: (Observer)
+- update()
+	- Call customer paidCheque()
+	- Get next customer
+	
+Messenger:
+- notify customer when they are added to waitlist
+- notify customer when they are ready to be checkedin
+- receive customer response and send it to ConciergeStaff
+
+Customer:
+- provide name, phone details to ConciergeStaff
+
+Interface State
+{
+	addedToWaitList()
+	readyTobeCheckedin()
+	confirmCheckin()
+	cancelCheckin()
+	checkin()
+	paidCheque();
+}
+
+NotWaiting:
+addedToWaitList()
+Change state to Waiting
+		
+Waiting:
+readyTobeCheckedin()
+Change state to Notified
+
+Notified:
+confirmCheckin()
+	walk quickly to restaurant
+	Change state to ReadyToCheckin
+cancelCheckin()
+	eat somewhere else
+	Change state to Cancelled
+
+ReadyToCheckin:
+checkin()
+	Change state to Checkedin
+
+Checkedin:
+paidCheque()
+	Change state to Completed
+	
+Completed:
+
+Cancelled:
+
