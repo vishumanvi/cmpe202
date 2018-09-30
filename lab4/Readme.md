@@ -6,8 +6,10 @@ Images of following CRC cards are checkedin
 5. Waiter.jpg - This class is an observer of table who get next customer to the table and services them
 6. Messenger.jpg - This class is responsible for all customer notifications
 7. Customer.jpg - This class represents customer of the restaurant
-8. Collaboration Diagram.jpg - This is the collaboration diagram
 
+
+Collaboration Diagram:
+Collaboration Diagram.jpg - This is the collaboration diagram involving all objects
 
 Design patterns used:
 
