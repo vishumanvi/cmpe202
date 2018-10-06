@@ -7,3 +7,14 @@ Images of following CRC cards are checkedin
 6. Messenger.jpg - This class is responsible for all customer notifications
 7. Customer.jpg - This class represents customer of the restaurant
 
+
+Collaboration Diagram:
+Collaboration Diagram.jpg - This is the collaboration diagram involving all objects
+
+Design patterns used:
+
+1. State pattern for Table 
+State of table triggers the customer wait-list management (like notifying customers, checking in next customer, etc) and hence its important to maintain it.
+
+2. Observer pattern:
+Once table state changes (Subject), it needs to notify its observers (ConciergeStaff and Waiter) to do some action. ConciergeStaff determines next eligible customer based on table size and customer party size and triggers notification where as waiter goes to the entrance to escort the next customer to the table.
