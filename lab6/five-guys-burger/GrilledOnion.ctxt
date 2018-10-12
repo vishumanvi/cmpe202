@@ -2,6 +2,4 @@
 comment0.target=GrilledOnion
 comment1.params=d
 comment1.target=GrilledOnion(java.lang.String)
-comment2.params=
-comment2.target=void\ printPrice()
-numComments=3
+numComments=2

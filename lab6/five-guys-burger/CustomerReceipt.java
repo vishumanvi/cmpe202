@@ -13,19 +13,22 @@ public class CustomerReceipt implements PrintOrder
     }
     
     public Component printingSequence() {
-        Composite customerReceipt = new Composite( "CustomerReceipt" ) ;
+
+        Composite customerReceipt = new Composite( "Customer Receipt" ) ;
         
-        CustomBurger customBurger = new CustomBurger( "LBB",5.59 ) ;
+        CustomBurger customBurger = new CustomBurger( "" ) ;
         //Burger bu = new Burger("LBB",5.59);
+        Burger bu = new Burger("1. LBB",5.59);
         Bacon b = new Bacon("{{{Bacon}}}");
         Lettuce l = new Lettuce("Lettuce");
         Tomato t = new Tomato("Tomato");
         GrilledOnion go = new GrilledOnion("->|G Onion");
         GrilledJalapeno gj = new GrilledJalapeno("->|G Jalapeno");
-        Fries f = new Fries("LTL CAJ",2.79);
+        Fries f = new Fries("2. LTL CAJ",2.79);
         
         customerReceipt.addChild( customBurger ) ;
         
+        customBurger.addChild( bu ) ;
         customBurger.addChild( b ) ;
         customBurger.addChild( l ) ;
         customBurger.addChild( t ) ;

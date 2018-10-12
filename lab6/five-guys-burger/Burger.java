@@ -8,21 +8,25 @@
 public class Burger extends Leaf
 {
 
+
+    /**
+     * Constructor for objects of class Burger
+     */
     public Burger(String d)
     {
         // initialise instance variables
-        super (d);
+        super(d);
 
     }
-    /**
+    
+        /**
      * Constructor for objects of class Burger
      */
     public Burger(String d, double p)
     {
         // initialise instance variables
-        super (d,p);
-
+        super(d,p);
     }
 
-
+    
 }

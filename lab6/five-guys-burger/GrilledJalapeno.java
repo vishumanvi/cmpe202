@@ -1,6 +1,5 @@
 public class GrilledJalapeno extends Leaf
 {
-    private String[] options ;
     
     
     public GrilledJalapeno( String d )
@@ -9,6 +8,5 @@ public class GrilledJalapeno extends Leaf
     }
     
     
-    public void printPrice() {
-    }
+
 }

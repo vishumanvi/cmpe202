@@ -30,8 +30,8 @@ public class Leaf implements Component {
     
 }
     
-    public void printPrice() {
-        // DO NOTHING
+    public double getPrice() {
+        return price;
       }
 
     public void addChild(Component c) {

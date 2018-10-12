@@ -4,6 +4,11 @@ import java.text.DecimalFormat;
 public class CustomBurger extends Composite
 {
     
+    public CustomBurger ()
+    {
+
+    }
+    
     public CustomBurger ( String d )
     {
         super(d) ;
@@ -25,11 +30,11 @@ public class CustomBurger extends Composite
         for (Component obj  : components)
         {
             obj.printDescription();
+            
         }
     }
 
-    public void printPrice() {
-    }
+ 
 }
 
        

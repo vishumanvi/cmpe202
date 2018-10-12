@@ -10,7 +10,6 @@ public class Lettuce extends Leaf
     
 
     
-    public void printPrice() {
-    }
+
     
 }

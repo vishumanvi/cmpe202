@@ -9,8 +9,5 @@ public class Tomato extends Leaf
     }
     
 
-    
-    public void printPrice() {
-    }
-    
+
 }

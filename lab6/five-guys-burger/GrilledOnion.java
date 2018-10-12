@@ -9,8 +9,6 @@ public class GrilledOnion extends Leaf
     }
     
 
-    
-    public void printPrice() {
-    }  
+
       
 }
