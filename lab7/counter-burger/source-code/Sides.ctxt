@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Sides
+comment0.text=\n\ Write\ a\ description\ of\ class\ Sides\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=d
+comment1.target=Sides(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Sides\n
+comment2.params=options
+comment2.target=void\ setOptions(java.lang.String[])
+comment3.params=
+comment3.target=java.lang.String\ getDescription()
+numComments=4
