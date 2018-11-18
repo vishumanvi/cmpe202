@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=BubbleSort
+comment0.text=\n\ A\ bubble\ sort\ demonstration\ algorithm\n\ SortAlgorithm.java,\ Thu\ Oct\ 27\ 10\:32\:35\ 1994\n\n\ @author\ James\ Gosling\n\ @version\ \t1.6,\ 31\ Jan\ 1995\n\n\ Modified\ 23\ Jun\ 1995\ by\ Jason\ Harrison@cs.ubc.ca\:\n\ \ \ Algorithm\ completes\ early\ when\ no\ items\ have\ been\ swapped\ in\ the\n\ \ \ last\ pass.\n
+comment1.params=a
+comment1.target=void\ sort(int[])
+numComments=2
