@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class DataSet {
 
     private ArrayList<Integer> data = new ArrayList<Integer>()  ;
-	private SortingStrategy strategy;
+    private SortingStrategy strategy;
     private int[] sortedList = new int[12] ;
 
     public DataSet()
@@ -27,8 +27,8 @@ public class DataSet {
         for ( int i = 0; i < data.size(); i++ )
             sortedList[i] = data.get(i) ;
     }
-	 
-	public void doSort() {
+     
+    public void doSort() {
         try {
             strategy.sort( sortedList );
             System.out.println( "List sorted with " + strategy.toString() );
@@ -36,22 +36,38 @@ public class DataSet {
         {
             System.out.println( e.toString() );
         }
-	}
-	 
-	public void display() {
+    }
+     
+    public void display() {
         for ( int i = 0; i < 12; i++ )
             System.out.println( sortedList[i] );
-	}
-	 
-	public void resetData() {
+    }
+     
+    public void resetData() {
         for ( int i = 0; i < data.size(); i++ )
             sortedList[i] = data.get(i) ;
         System.out.println( "Data Reset Done!");
-	}
-	 
-	public void changeStrategy(SortingStrategy s) {
-	    strategy = s ;
-	}
-	 
+    }
+     
+    public void changeStrategy(SortingStrategy s) {
+        strategy = s ;
+    }
+    
+    
+    public static void main( String[] args)
+    {
+        DataSet dataset = new DataSet() ; // defaults to BubbleSort
+        dataset.display();
+        dataset.doSort();
+        dataset.display();
+        dataset.resetData();
+        dataset.display();
+        dataset.changeStrategy( new InsertionSort() );
+        dataset.doSort();
+        dataset.display();
+    }
+ 
+
+     
 }
  
